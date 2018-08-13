@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+               <!---Menu Lateral-->
+            <div class="menulateral col-12 col-sm-auto">
+                <div class="logo">
+                    <h2>Practica Victor</h2>
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+
+                    <a href="#"><i class="icon-home"></i> <span>Inicio</span></a>
+                    <a href="#"><i class="icon-doc-text"></i> <span>Entradas</span></a>
+                    <a href="#"><i class="icon-users"></i> <span>Usuarios</span></a>
+                    <a href="#"><i class="icon-cog-alt"></i> <span>Configuracion</span></a>
+                    <a href="#"><i class="icon-logout"></i> <span>Salir</span></a>
+
+                </nav>
+            </div>
+            <!--SECCION MAIN-->
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-7">  <!--COL Entrada nueva-->
+                        <div class="widget nueva_entrada">
+                            <h3 class="titulo">Nueva Entrada</h3>
+                            <form action="">
+                                <input type="text" placeholder="Titulo de la entrada">
+                                <textarea cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque assumenda vel accusantium itaque quisquam, qui, cupiditate reiciendis voluptate fugiat vero ratione facere dolor aperiam consectetur distinctio aliquid, eveniet quaerat quasi!"></textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button><i class="icon icon-edit"></i>Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="columna col-lg-5"> <!--COL Estadistica y Comentarios-->
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Estadisticas</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>20,256</h3>
+                                    <p>Visitas</p>
+                                </div>
+
+                                <div class="caja">
+                                    <h3>1,256</h3>
+                                    <p>Registros</p>
+                                </div>
+
+                                <div class="caja">
+                                    <h3>170.000</h3>
+                                    <p>Ingresos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget comentarios">
+                            <h3 class="titulo">Comentatios</h3>
+                            <div class="contenedor">
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona1.jpg" width="100" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="texto">
+                                        <a href="#" >Manuel Perez</a>
+                                        <p>en <a href="#">Primera Entrada</a></p>
+                                        <p class="texto-comentario">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                            Ad inventore sequi alias necessitatibus doloremque deleniti .
+                                        </p>
+                                    </div>
+
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100" >
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear Usuario</button>
+                                    </div>
+                                </div>
+
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona2.jpg" width="100" alt="">
+                                        </a>
+                                    </div>
+    
+                                    <div class="texto">
+                                        <a href="#" >Pablo Ruiz</a>
+                                        <p>en <a href="#">Primera Entrada</a></p>
+                                        <p class="texto-comentario">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                            Ad inventore sequi alias necessitatibus doloremque deleniti .
+                                        </p>
+                                    </div>
+    
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100" >
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear Usuario</button>
+                                    </div>
+                                </div>
+
+                                <div class="comentario d-flex flex-wrap">
+                                    <div class="foto">
+                                        <a href="#">
+                                            <img src="img/persona3.jpg" width="100" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="texto">
+                                        <a href="#" >Pablo Ruiz</a>
+                                        <p>en <a href="#">Primera Entrada</a></p>
+                                        <p class="texto-comentario">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                            Ad inventore sequi alias necessitatibus doloremque deleniti .
+                                        </p>
+                                    </div>
+        
+                                    <div class="botones d-flex justify-content-start flex-wrap w-100" >
+                                        <button class="aprobar"><i class="icono icon-ok"></i>Aprobar</button>
+                                        <button class="eliminar"><i class="icono icon-cancel"></i>Eliminar</button>
+                                        <button class="bloquear"><i class="icono icon-flag"></i>Bloquear Usuario</button>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</body>
+</html>

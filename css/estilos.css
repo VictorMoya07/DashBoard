@@ -1,0 +1,272 @@
+body{
+    background:#f2f2f2;
+    font-size:16px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+/*--------------------------------Menu Lateral--------------*/
+.menulateral{
+    background: #1B1B1A;
+    color:#fff;
+    min-width: 300px;
+    min-height: 100vh;
+    padding:0;
+}
+
+.menulateral a{
+    color:#fff;
+}
+
+/*-----logo----*/
+.menulateral .logo{
+    background:  #FAAC58;
+   
+    margin-bottom: 1px;
+
+}
+
+.menulateral .logo h2{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    margin:0;
+}
+/*--------MENU--------*/
+
+.menulateral .menu a{
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-bottom:1px solid rgba(255, 175, 51, .1);
+}
+
+.menulateral .menu a:hover{
+    background: #fff;
+    text-decoration: none;
+    color:#FAAC58;
+}
+.menulateral .menu a i{
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/*-------------Main------------------*/
+.main{
+    padding-top:40px;
+}
+.main columna{
+    padding-left:40px;
+    padding-right: 40px;
+
+}
+
+.main .titulo{
+    color:#262a34;
+    font-size:25px;
+    font-weight:500;
+    font-family:'roboto',sans-serif;
+    margin-bottom: 20px; 
+}
+
+.main .widget{
+    margin-bottom:40px; 
+}
+
+/*------------Widget nueva entrada-------------*/
+
+.main .widget form input[type="text"],
+.main .widget form textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    font-family: 'Open Sans',sans-serif;
+    border:none;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.main .widget form textarea{
+    height:300px;
+    min-height: 200px;
+    max-height: 400px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.main .widget form button{
+    background:#FAAC58;
+    cursor:pointer;
+    color:#fff;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    border:none;
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    border-radius:3px;
+    transition:all .3s ease;
+    text-align: center;
+
+}
+
+.main .widget form button:hover{
+    color:#FAAC58;
+    background: #fff;
+    border:1px solid #FAAC58;
+}
+
+/*------Widget estadisticas---*/
+.main .estadisticas .contenedor{
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+.main .estadisticas .caja{
+    background:#fff;
+    border:1px solid #E5E5E0;
+    padding: 40px 20px;
+    flex:1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+.main .estadisticas .caja h3{
+    margin-bottom: 10px;
+    color:#FAAC58;
+    font-weight: 700;
+}
+
+.main .estadisticas .caja:first-child{
+    border-right:none;
+}
+
+.main .estadisticas .caja:last-child{
+    border-left:none;
+}
+
+.main .estadisticas .caja p{
+    color:#E5E5E0;
+    margin-bottom: 0px;
+}
+
+/*-----------Widget Comentarios-----------*/
+
+.main .comentarios .contenedor{
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+}
+
+.main .comentarios .comentario{
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #E5E5E0;;
+
+}
+
+.main .comentarios .comentario .foto{
+    width:64px;
+    height: 64px;
+    overflow: hidden;
+    margin-right:20px;
+    border-radius: 100px; 
+}
+
+.main .comentarios .comentario .foto img{
+    width: 100%;
+}
+
+.main .comentarios .comentario .foto a{
+    display: inline-block;
+}
+
+.main .comentarios .comentario .texto{
+    flex:1;
+}
+
+.main .comentarios .comentario .texto .texto-comentario{
+    font-size: 14px;
+    font-family: 'Open sans',sans-serif;
+}
+
+.main .comentarios .comentario .texto a{
+    text-decoration: none;
+    color:#FAAC58;
+}
+
+.main .comentarios .comentario .botones button{
+    background: none;
+    cursor:pointer;
+    color:#fff;
+    font-family:'Roboto', sans-serif;
+    font-size:14px;
+    font-weight: 500;
+    border:none;
+    display: inline-block;
+    padding:5px 10px;
+    border-radius:3px;
+    transition: all .3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.main .comentarios .comentario .botones .aprobar{background:#35ae6b }
+.main .comentarios .comentario .botones .eliminar{background:#D33735}
+.main .comentarios .comentario .botones .bloquear{background:#EAE3E3 }
+
+
+.main .comentarios .comentario .botones .aprobar:hover{
+    background: #10611A;
+}
+
+.main .comentarios .comentario .botones .eliminar:hover{background:#670305}
+
+.main .comentarios .comentario .botones .bloquear:hover{background:#7F7E7E }
+
+
+/*-------------MEDIAQUERIES-------*/
+@media screen and (max-width: 1300px){
+    .menulateral{
+        min-width:auto;
+    }
+
+    .menulateral .logo{
+        display:none;
+    }
+    .menulateral .menu a span{
+        display:none;
+    }
+
+    .menulateral .menu a i{
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menulateral{
+        min-height: auto;
+    }
+
+    .menulateral .menu a{
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    .main .widget form button{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 320px){
+    .main .comentarios .comentario .foto{
+        width:30px;
+        height:30px;
+    }
+
+    .main .comentarios .comentario botones{
+        font-size: 10px;
+    }
+}
